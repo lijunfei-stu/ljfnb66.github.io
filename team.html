@@ -12,7 +12,7 @@ permalink: /team
     <h2 style="font-size: 24px; margin-bottom: 20px; font-weight: 500;">教师 (Director)</h2>
     <div class="row">
       <div class="col-md-12">
-        <div class="team-member-teacher">
+        <div class="team-member-teacher card">
           <div class="row">
             <div class="col-md-3">
               <img src="assets/img/IRES_team/lihaiyuan.jpg" alt="Haiyuan Li" style="width: 100%; border-radius: 5px;">
@@ -78,7 +78,7 @@ permalink: /team
     <div class="row">
       <!-- 1 - 每行4人 -->
       <div class="col-md-3 col-sm-6">
-        <div class="team-member card">
+        <div class="team-member-phd card">
           <div class="member-photo">
             <img src="assets/img/IRES_team/wanghaoyu.jpg" alt="Haoyuan Wang"
               style="width: 100%; border-radius: 5px; height: 270px; object-fit: cover;">
@@ -491,6 +491,22 @@ permalink: /team
     /* 设置团队成员部分底部的外边距，使各部分之间有间距 */
   }
 
+  /* 教师和博士研究生团队成员样式 */
+  .team-member-teacher,
+  .team-member-phd {
+    margin-bottom: 30px;
+    /* 设置每个团队成员底部的外边距，使成员之间有间距 */
+    padding-bottom: 20px;
+    /* 设置每个团队成员底部的内边距，增加内容与边框的距离 */
+    border-bottom: 1px solid #eee;
+    /* 为每个团队成员添加底部边框，颜色为浅灰色，使成员之间有分隔线 */
+    height: 450px;
+    /*添加固定高度*/
+    overflow: hidden;
+    /* 防止内容溢出 */
+  }
+
+  /* 硕士研究生团队成员样式 */
   .team-member {
     margin-bottom: 30px;
     /* 设置每个团队成员底部的外边距，使成员之间有间距 */
@@ -504,28 +520,38 @@ permalink: /team
     /* 防止内容溢出 */
   }
 
+  .team-member-teacher:last-child,
+  .team-member-phd:last-child,
   .team-member:last-child {
     border-bottom: none;
     /* 移除最后一个团队成员的底部边框，避免页面底部有多余的线条 */
   }
 
+  .team-member-teacher h3,
+  .team-member-phd h3,
   .team-member h3 {
     font-weight: 500;
     /* 设置团队成员姓名的字体粗细为500，使文字看起来稍微粗一些但不至于过粗 */
   }
 
+  .team-member-teacher p,
+  .team-member-phd p,
   .team-member p {
     margin-bottom: 5px;
     /* 设置段落底部的外边距，使段落之间有间距 */
   }
 
   /* 悬停效果 */
+  .team-member-teacher:hover,
+  .team-member-phd:hover,
   .team-member:hover {
     background-color: #f5f5f5;
     /* 当鼠标悬停在团队成员上时，背景颜色变为浅灰色，提供交互反馈 */
   }
 
   /* 名字颜色设置及悬停效果 */
+  .team-member-teacher a,
+  .team-member-phd a,
   .team-member a {
     color: #0A4062;
     /* 设置团队成员名字链接的默认颜色为深蓝色 */
@@ -533,6 +559,8 @@ permalink: /team
     /* 去除链接的下划线 */
   }
 
+  .team-member-teacher a:hover,
+  .team-member-phd a:hover,
   .team-member a:hover {
     color: #007E7D;
     /* 当鼠标悬停在团队成员名字链接上时，颜色变为青绿色，提供视觉反馈 */
@@ -541,6 +569,8 @@ permalink: /team
   }
 
   /* 个人介绍左对齐 */
+  .team-member-teacher .col-md-9,
+  .team-member-phd .col-md-9,
   .team-member .col-md-9 {
     text-align: left;
     /* 设置团队成员的个人信息部分左对齐，使文字整齐排列 */
