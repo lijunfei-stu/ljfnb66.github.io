@@ -1,0 +1,268 @@
+layout: default_style
+permalink: /Image-guided-surgical-robot
+---
+<div class="container">
+    <header class="page-header">
+        <h1>Image-Guided Navigated Interventions</h1>
+        <p class="intro">
+            A cutting-edge approach merging advanced imaging technologies with precise navigation systems to enhance
+            procedural accuracy and patient outcomes. This integrated solution enables real-time visualization of
+            internal structures via MRI, CT, or ultrasound, supporting minimally invasive interventions across
+            cardiology, oncology, and neurosurgery.
+        </p>
+    </header>
+
+    <section class="technology-showcase">
+        <div class="tech-card">
+            <h2>NaviKnife</h2>
+            <div class="tech-content">
+                <p>
+                    Addressing the challenge of breast tissue deformability in cancer surgery, NaviKnife is an
+                    ultrasound-guided navigation system that visualizes surgical tools relative to tumors in real time.
+                    This technology helps preserve healthy tissue while ensuring complete tumor removal.
+                </p>
+                <ul class="tech-features">
+                    <li>Ultrasound integration for real-time tool tracking</li>
+                    <li>Reduced positive margin rates in clinical studies</li>
+                    <li>Decreased excised specimen weight/size</li>
+                    <li>Enhanced tumor margin visualization</li>
+                </ul>
+            </div>
+            <div class="tech-visual">
+                <div class="placeholder-img">Navigation Display Simulation</div>
+                <div class="metrics">
+                    <span>Localization Accuracy: 31.0mm</span>
+                    <span>Tool: Surgical Needle/Cautery</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-card">
+            <h2>NousNav</h2>
+            <div class="tech-content">
+                <p>
+                    A low-cost, open-source neuronavigation solution designed to address neurosurgeon shortages in low
+                    and middle-income countries (LMICs). By combining affordable hardware with free software, NousNav
+                    delivers essential functionalities at under $8,000 USD.
+                </p>
+                <ul class="tech-features">
+                    <li>Open-source alternative to commercial systems</li>
+                    <li>Collaboration between Queen’s University and Brigham and Women’s Hospital</li>
+                    <li>Suitable for resource-constrained healthcare settings</li>
+                    <li>Supports core neurosurgical navigation needs</li>
+                </ul>
+            </div>
+            <div class="tech-visual">
+                <div class="placeholder-img">NousNav Interface</div>
+                <div class="collaborators">
+                    <span>Partners: Golby Lab, Kitware</span>
+                    <span>Initiated: 2019</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-card">
+            <h2>Open-Source Integration</h2>
+            <div class="tech-content">
+                <p>
+                    Advancing image-guided robotic systems through seamless integration of 3D Slicer (medical imaging
+                    platform) and ROS2 (Robot Operating System). The SlicerROS2 module enables direct data transfer and
+                    real-time visualization.
+                </p>
+                <ul class="tech-features">
+                    <li>Eliminates reliance on middleware</li>
+                    <li>Bi-directional data exchange between systems</li>
+                    <li>Supports diverse hardware configurations</li>
+                    <li>Part of ROSMED initiative (<a href="https://rosmed.github.io/"
+                            target="_blank">rosmed.github.io</a>)</li>
+                </ul>
+            </div>
+            <div class="tech-visual">
+                <div class="placeholder-img">Slicer-ROS2 Workflow</div>
+                <div class="tech-tags">
+                    <span>3D Slicer</span>
+                    <span>ROS2</span>
+                    <span>Real-time Visualization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clinical-applications">
+        <h2>Clinical Applications</h2>
+        <div class="applications-grid">
+            <div class="app-item">Cardiology</div>
+            <div class="app-item">Breast Cancer Surgery</div>
+            <div class="app-item">Radiation Therapy</div>
+            <div class="app-item">Neurosurgery</div>
+            <div class="app-item">Virtual Reality Integration</div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // 简单交互效果：卡片悬停动画
+    document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.tech-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 8px rgba(0,0,0,0.05)';
+            });
+        });
+    });
+</script>
+
+<style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #555;
+    }
+
+    .technology-showcase {
+        display: grid;
+        gap: 2.5rem;
+        margin: 3rem 0;
+    }
+
+    .tech-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border-left: 4px solid #3498db;
+    }
+
+    .tech-card h2 {
+        color: #2c3e50;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .tech-content {
+        margin-bottom: 1.5rem;
+    }
+
+    .tech-content p {
+        line-height: 1.7;
+        color: #444;
+    }
+
+    .tech-features {
+        list-style: none;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .tech-features li {
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+    }
+
+    .tech-features li:before {
+        content: "•";
+        color: #3498db;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+
+    .tech-visual {
+        margin-top: 1.5rem;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #f8f9fa;
+        padding: 1rem;
+    }
+
+    .placeholder-img {
+        height: 180px;
+        background: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+    }
+
+    .metrics,
+    .collaborators,
+    .tech-tags {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .clinical-applications {
+        margin: 4rem 0;
+    }
+
+    .clinical-applications h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2c3e50;
+    }
+
+    .applications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .app-item {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 8px;
+        text-align: center;
+        border: 1px solid #e9ecef;
+        color: #34495e;
+        font-weight: 500;
+    }
+
+    @media (min-width: 768px) {
+        .technology-showcase {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .tech-card {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+    }
+</style>
