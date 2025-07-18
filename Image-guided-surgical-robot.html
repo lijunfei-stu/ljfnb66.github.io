@@ -16,8 +16,15 @@ permalink: /Image-guided-surgical-robot
 
     <section class="technology-showcase">
         <div class="tech-card">
-            <h2>NaviKnife</h2>
+            <div class="tech-visual">
+                <img src="/assets//img/team/member1.png" alt="NaviKnife手术导航系统界面" class="featured-image">
+                <div class="metrics">
+                    <span>Localization Accuracy: 31.0mm</span>
+                    <span>Tool: Surgical Needle/Cautery</span>
+                </div>
+            </div>
             <div class="tech-content">
+                <h2>NaviKnife</h2>
                 <p>
                     Addressing the challenge of breast tissue deformability in cancer surgery, NaviKnife is an
                     ultrasound-guided navigation system that visualizes surgical tools relative to tumors in real time.
@@ -30,18 +37,11 @@ permalink: /Image-guided-surgical-robot
                     <li>Enhanced tumor margin visualization</li>
                 </ul>
             </div>
-            <div class="tech-visual">
-                <div class="placeholder-img">Navigation Display Simulation</div>
-                <div class="metrics">
-                    <span>Localization Accuracy: 31.0mm</span>
-                    <span>Tool: Surgical Needle/Cautery</span>
-                </div>
-            </div>
         </div>
 
         <div class="tech-card">
-            <h2>NousNav</h2>
             <div class="tech-content">
+                <h2>NousNav</h2>
                 <p>
                     A low-cost, open-source neuronavigation solution designed to address neurosurgeon shortages in low
                     and middle-income countries (LMICs). By combining affordable hardware with free software, NousNav
@@ -55,7 +55,7 @@ permalink: /Image-guided-surgical-robot
                 </ul>
             </div>
             <div class="tech-visual">
-                <div class="placeholder-img">NousNav Interface</div>
+                <img src="/assets//img/team/member1.png" alt="NousNav开源神经导航系统界面" class="featured-image">
                 <div class="collaborators">
                     <span>Partners: Golby Lab, Kitware</span>
                     <span>Initiated: 2019</span>
@@ -64,8 +64,16 @@ permalink: /Image-guided-surgical-robot
         </div>
 
         <div class="tech-card">
-            <h2>Open-Source Integration</h2>
+            <div class="tech-visual">
+                <img src="/assets//img/team/member1.png" alt="3D Slicer与ROS2集成工作流" class="featured-image">
+                <div class="tech-tags">
+                    <span>3D Slicer</span>
+                    <span>ROS2</span>
+                    <span>Real-time Visualization</span>
+                </div>
+            </div>
             <div class="tech-content">
+                <h2>Open-Source Integration</h2>
                 <p>
                     Advancing image-guided robotic systems through seamless integration of 3D Slicer (medical imaging
                     platform) and ROS2 (Robot Operating System). The SlicerROS2 module enables direct data transfer and
@@ -79,25 +87,32 @@ permalink: /Image-guided-surgical-robot
                             target="_blank">rosmed.github.io</a>)</li>
                 </ul>
             </div>
-            <div class="tech-visual">
-                <div class="placeholder-img">Slicer-ROS2 Workflow</div>
-                <div class="tech-tags">
-                    <span>3D Slicer</span>
-                    <span>ROS2</span>
-                    <span>Real-time Visualization</span>
-                </div>
-            </div>
         </div>
     </section>
 
     <section class="clinical-applications">
         <h2>Clinical Applications</h2>
         <div class="applications-grid">
-            <div class="app-item">Cardiology</div>
-            <div class="app-item">Breast Cancer Surgery</div>
-            <div class="app-item">Radiation Therapy</div>
-            <div class="app-item">Neurosurgery</div>
-            <div class="app-item">Virtual Reality Integration</div>
+            <div class="app-item">
+                <img src="/assets//img/team/member1.png" alt="心脏介入治疗" class="app-image">
+                <span>Cardiology</span>
+            </div>
+            <div class="app-item">
+                <img src="/assets//img/team/member1.png" alt="乳腺癌手术导航" class="app-image">
+                <span>Breast Cancer Surgery</span>
+            </div>
+            <div class="app-item">
+                <img src="/assets//img/team/member1.png" alt="放射治疗计划系统" class="app-image">
+                <span>Radiation Therapy</span>
+            </div>
+            <div class="app-item">
+                <img src="/assets//img/team/member1.png" alt="神经外科导航手术" class="app-image">
+                <span>Neurosurgery</span>
+            </div>
+            <div class="app-item">
+                <img src="/assets//img/team/member1.png" alt="虚拟现实手术模拟" class="app-image">
+                <span>Virtual Reality Integration</span>
+            </div>
         </div>
     </section>
 </div>
@@ -116,10 +131,28 @@ permalink: /Image-guided-surgical-robot
                 card.style.boxShadow = '0 4px 8px rgba(0,0,0,0.05)';
             });
         });
+
+        // 图片加载效果
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.style.opacity = '0';
+            img.style.transition = 'opacity 0.5s ease';
+            img.onload = () => {
+                img.style.opacity = '1';
+            };
+        });
     });
 </script>
 
 <style>
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+
     .page-header {
         text-align: center;
         margin-bottom: 3rem;
@@ -152,6 +185,14 @@ permalink: /Image-guided-surgical-robot
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         transition: all 0.3s ease;
         border-left: 4px solid #3498db;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2rem;
+    }
+
+    /* 让第二个 .tech-card 的图片在右边 */
+    .tech-card:nth-child(2) {
+        grid-template-columns: 2fr 1fr;
     }
 
     .tech-card h2 {
@@ -195,17 +236,12 @@ permalink: /Image-guided-surgical-robot
         margin-top: 1.5rem;
         border-radius: 8px;
         overflow: hidden;
-        background: #f8f9fa;
-        padding: 1rem;
     }
 
-    .placeholder-img {
-        height: 180px;
-        background: #e9ecef;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #666;
+    .featured-image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
         border-radius: 6px;
         margin-bottom: 1rem;
     }
@@ -244,6 +280,20 @@ permalink: /Image-guided-surgical-robot
         border: 1px solid #e9ecef;
         color: #34495e;
         font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .app-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .app-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 1rem;
     }
 
     @media (min-width: 768px) {
@@ -252,11 +302,9 @@ permalink: /Image-guided-surgical-robot
         }
     }
 
-    @media (min-width: 992px) {
+    @media (max-width: 992px) {
         .tech-card {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 2rem;
+            grid-template-columns: 1fr !important;
         }
     }
 </style>
