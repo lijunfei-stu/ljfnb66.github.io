@@ -221,14 +221,27 @@ permalink: /research
         gap: 15px 20px;
     }
 
+    .nav-links li {
+        width: calc(50% - 20px);
+        /* 每行两个元素 */
+    }
+
     .nav-links li a {
         color: white;
         text-decoration: none;
         padding: 8px 12px;
         border-radius: 4px;
-        font-size: 0.95rem;
+        font-size: 1.1rem;
+        /* 增大字体 */
         transition: all 0.3s ease;
         background-color: rgba(255, 255, 255, 0.1);
+        display: block;
+        text-align: center;
+        aspect-ratio: 1 / 1;
+        /* 使边框长宽一致 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .nav-links li a:hover {
@@ -240,6 +253,10 @@ permalink: /research
     @media (max-width: 768px) {
         .nav-links {
             gap: 10px;
+        }
+
+        .nav-links li {
+            width: 100%;
         }
 
         .nav-links li a {
