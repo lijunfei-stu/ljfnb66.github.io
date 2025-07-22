@@ -6,25 +6,25 @@ permalink: /research
 <div class="container">
     <!-- 页面头部 -->
     <header class="page-header text-center">
-        <div class="container">
-            <h1 class="page-title">Research Themes</h1>
-            <p class="lead">探索前沿研究领域，推动科技创新。</p>
+        <!-- 移除内部的 container 类 -->
+        <h1 class="page-title">Research Themes</h1>
+        <p class="lead">探索前沿研究领域，推动科技创新。</p>
 
-            <!-- 新增研究方向导航 -->
-            <nav class="research-nav">
-                <ul class="nav-links">
-                    <li><a href="#research1">Image-guided surgical robot</a></li>
-                    <li><a href="#research2">Ultrasound navigation and multimodal image fusion</a></li>
-                    <li><a href="#research3">Laparoscopy navigation and embodied intelligent control</a></li>
-                    <li><a href="#research4">Miniature flexible robot for endoscopy surgery</a></li>
-                    <li><a href="#research5">Robot dexterous manipulation</a></li>
-                    <li><a href="#research6">Self-assembling modular robot and self-reconguring</a></li>
-                </ul>
-            </nav>
-        </div>
+        <!-- 新增研究方向导航 -->
+        <nav class="research-nav">
+            <ul class="nav-links">
+                <li><a href="#research1">Image-guided surgical robot</a></li>
+                <li><a href="#research2">Ultrasound navigation and multimodal image fusion</a></li>
+                <li><a href="#research3">Laparoscopy navigation and embodied intelligent control</a></li>
+                <li><a href="#research4">Miniature flexible robot for endoscopy surgery</a></li>
+                <li><a href="#research5">Robot dexterous manipulation</a></li>
+                <li><a href="#research6">Self-assembling modular robot and self-reconguring</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
+    <!-- 修改为 container-fluid 以占满宽度 -->
+    <main class="container-fluid">
 
         <!-- 研究主题 1 -->
         <section class="research-theme" id="research1">
@@ -63,7 +63,8 @@ permalink: /research
                 <div class="col-lg-6">
                     <div class="theme-content">
                         <h2 class="theme-title">
-                            <a href="Ultrasound-navigation-and-multimodal-image-fusion.html">Ultrasound navigation and multimodal image fusion</a>
+                            <a href="Ultrasound-navigation-and-multimodal-image-fusion.html">Ultrasound navigation and
+                                multimodal image fusion</a>
                         </h2>
                         <p class="theme-description">
                             人工智能已经改变了医学影像领域，能够快速准确地分析大量数据，检测超声、MRI和CT扫描中的细微异常，有助于早期疾病检测。我们团队开发AI解决方案，并将其集成到用于指导程序和培训的系统中，展示了它们对医疗诊断和治疗规划的重大影响。我们的算法能够识别人眼难以察觉的病变模式，提供更准确的诊断。
@@ -89,7 +90,8 @@ permalink: /research
                 <div class="col-lg-6">
                     <div class="theme-content">
                         <h2 class="theme-title">
-                            <a href="Laparoscopy-navigation-and-embodied-intelligent-control.html">Laparoscopy navigation and embodied intelligent control</a>
+                            <a href="Laparoscopy-navigation-and-embodied-intelligent-control.html">Laparoscopy
+                                navigation and embodied intelligent control</a>
                         </h2>
                         <p class="theme-description">
                             人工智能已经改变了医学影像领域，能够快速准确地分析大量数据，检测超声、MRI和CT扫描中的细微异常，有助于早期疾病检测。我们团队开发AI解决方案，并将其集成到用于指导程序和培训的系统中，展示了它们对医疗诊断和治疗规划的重大影响。我们的算法能够识别人眼难以察觉的病变模式，提供更准确的诊断。
@@ -115,7 +117,8 @@ permalink: /research
                 <div class="col-lg-6">
                     <div class="theme-content">
                         <h2 class="theme-title">
-                            <a href="Miniature-flexible-robot-for-endoscopy-surgery.html">Miniature flexible robot for endoscopy surgery</a>
+                            <a href="Miniature-flexible-robot-for-endoscopy-surgery.html">Miniature flexible robot for
+                                endoscopy surgery</a>
                         </h2>
                         <p class="theme-description">
                             人工智能已经改变了医学影像领域，能够快速准确地分析大量数据，检测超声、MRI和CT扫描中的细微异常，有助于早期疾病检测。我们团队开发AI解决方案，并将其集成到用于指导程序和培训的系统中，展示了它们对医疗诊断和治疗规划的重大影响。我们的算法能够识别人眼难以察觉的病变模式，提供更准确的诊断。
@@ -167,7 +170,8 @@ permalink: /research
                 <div class="col-lg-6">
                     <div class="theme-content">
                         <h2 class="theme-title">
-                            <a href="Self-assembling-modular-robot-and-self-reconguring.html">Self-assembling modular robot and self-reconguring</a>
+                            <a href="Self-assembling-modular-robot-and-self-reconguring.html">Self-assembling modular
+                                robot and self-reconguring</a>
                         </h2>
                         <p class="theme-description">
                             人工智能已经改变了医学影像领域，能够快速准确地分析大量数据，检测超声、MRI和CT扫描中的细微异常，有助于早期疾病检测。我们团队开发AI解决方案，并将其集成到用于指导程序和培训的系统中，展示了它们对医疗诊断和治疗规划的重大影响。我们的算法能够识别人眼难以察觉的病变模式，提供更准确的诊断。
@@ -207,51 +211,66 @@ permalink: /research
     }
 
     /* 导航菜单样式 */
-.research-nav {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 15px; /* 保持紧凑间距 */
-}
-.nav-links li {
-    width: calc(50% - 15px); /* 维持两列布局 */
-}
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    padding: 12px 10px; /* 适当增加内边距配合文字大小 */
-    border-radius: 6px;
-    font-size: 1.25rem; /* 文字调大（原1.05rem → 1.25rem） */
-    font-weight: 500; /* 增加字重，提升可读性 */
-    transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 70px; /* 适当提高最小高度，避免文字拥挤 */
-    line-height: 1.5; /* 微调行高，确保多行文字舒适 */
-    text-align: center;
-    word-break: break-word; /* 防止长文字溢出 */
-}
-.nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
-/* 响应式调整（小屏幕适配） */
-@media (max-width: 768px) {
-    .nav-links li a {
-        font-size: 1.1rem; /* 小屏幕文字适当缩小，避免溢出 */
-        padding: 10px 8px;
-        min-height: 60px;
+    .research-nav {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
-}
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        /* 保持紧凑间距 */
+    }
+
+    .nav-links li {
+        width: calc(50% - 15px);
+        /* 维持两列布局 */
+    }
+
+    .nav-links li a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 10px;
+        /* 适当增加内边距配合文字大小 */
+        border-radius: 6px;
+        font-size: 2.25rem;
+        /* 文字调大（原1.05rem → 1.25rem） */
+        font-weight: 500;
+        /* 增加字重，提升可读性 */
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 70px;
+        /* 适当提高最小高度，避免文字拥挤 */
+        line-height: 1.5;
+        /* 微调行高，确保多行文字舒适 */
+        text-align: center;
+        word-break: break-word;
+        /* 防止长文字溢出 */
+    }
+
+    .nav-links li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+    }
+
+    /* 响应式调整（小屏幕适配） */
+    @media (max-width: 768px) {
+        .nav-links li a {
+            font-size: 1.1rem;
+            /* 小屏幕文字适当缩小，避免溢出 */
+            padding: 10px 8px;
+            min-height: 60px;
+        }
+    }
+
     /* 根元素变量定义，用于全局颜色和背景色的设置 */
     :root {
         --primary-color: #0A4062;
@@ -284,8 +303,8 @@ permalink: /research
         /* 背景颜色使用主色调 */
         color: white;
         /* 文字颜色为白色 */
-        padding: 70px 0 50px;
-        /* 上下内边距 */
+        padding: 30px 0;
+        /* 减少上下内边距以降低高度 */
         margin-bottom: 50px;
         /* 底部外边距 */
     }
