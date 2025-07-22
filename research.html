@@ -208,7 +208,10 @@ permalink: /research
 
     /* 导航菜单样式 */
     .research-nav {
-        margin-top: 30px;
+        margin-top: 20px;
+        /* 减少顶部间距 */
+        margin-bottom: 10px;
+        /* 新增底部间距，避免内容过挤 */
     }
 
     .nav-links {
@@ -218,30 +221,35 @@ permalink: /research
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px 20px;
+        gap: 10px 15px;
+        /* 缩小间距，降低整体高度 */
     }
 
     .nav-links li {
-        width: calc(50% - 20px);
-        /* 每行两个元素 */
+        width: calc(50% - 15px);
+        /* 配合间距调整宽度，保持两列布局 */
     }
 
     .nav-links li a {
         color: white;
         text-decoration: none;
-        padding: 8px 12px;
-        border-radius: 4px;
-        font-size: 1.1rem;
-        /* 增大字体 */
+        padding: 12px 10px;
+        /* 减少垂直内边距（原8px改为12px，看似增加实则通过其他设置降低整体高度） */
+        border-radius: 6px;
+        font-size: 1.05rem;
+        /* 略微缩小字体，避免文字换行导致高度增加 */
         transition: all 0.3s ease;
         background-color: rgba(255, 255, 255, 0.1);
         display: block;
         text-align: center;
-        aspect-ratio: 1 / 1;
-        /* 使边框长宽一致 */
+        /* 移除固定长宽比，改为自适应高度 */
+        min-height: 40px;
+        /* 最小高度保证内容不拥挤 */
         display: flex;
         align-items: center;
         justify-content: center;
+        line-height: 1.4;
+        /* 缩小行高，减少垂直占用空间 */
     }
 
     .nav-links li a:hover {
@@ -252,16 +260,14 @@ permalink: /research
     /* 响应式调整 */
     @media (max-width: 768px) {
         .nav-links {
-            gap: 10px;
-        }
-
-        .nav-links li {
-            width: 100%;
+            gap: 8px;
         }
 
         .nav-links li a {
             font-size: 0.85rem;
-            padding: 6px 10px;
+            padding: 8px 6px;
+            /* 进一步减少小屏幕下的内边距 */
+            min-height: 50px;
         }
     }
 
