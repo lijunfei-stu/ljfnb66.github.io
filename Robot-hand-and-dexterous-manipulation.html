@@ -6,94 +6,32 @@ permalink: /Robot-hand-and-dexterous-manipulation
 <div class="container">
     <!-- 灰色标题区 -->
     <section style="margin-top: 10px; background:#f5f5f5;padding:20px 0;text-align:center;">
-        <h2 style="margin:0;font-size:28px;color:#002060;">Robot hand and dexterous manipulation</h2>
-        <p class="intro">
-            A cutting-edge approach merging advanced imaging technologies with precise navigation systems to enhance
-            procedural accuracy and patient outcomes. This integrated solution enables real-time visualization of
-            internal structures via MRI, CT, or ultrasound, supporting minimally invasive interventions across
-            cardiology, oncology, and neurosurgery.
-        </p>
+        <h2 style="margin:0;font-size:28px;color:#002060;">Image-guided surgical robot</h2>
+        <h2 style="padding-top:10px;font-size:24px;color:#555;">图像引导手术机器人</h2>
     </section>
-
     <section class="technology-showcase">
         <div class="tech-card">
             <div class="tech-visual">
-                <img src="/assets//img/team/member1.png" alt="NaviKnife手术导航系统界面" class="featured-image">
+                <img src="/assets//img/IRES_research/图像引导手术机器人部分成果.png" alt="NaviKnife手术导航系统界面" class="featured-image">
                 <div class="metrics">
-                    <span>Localization Accuracy: 31.0mm</span>
-                    <span>Tool: Surgical Needle/Cautery</span>
+                    <span style="font-weight:bold;">图1 图像引导手术机器人部分成果</span>
                 </div>
             </div>
             <div class="tech-content">
-                <h2>NaviKnife</h2>
-                <p>
-                    Addressing the challenge of breast tissue deformability in cancer surgery, NaviKnife is an
-                    ultrasound-guided navigation system that visualizes surgical tools relative to tumors in real time.
-                    This technology helps preserve healthy tissue while ensuring complete tumor removal.
+                <h2 style="color: #042463;">Introduction</h2>
+                <p style="text-indent: 2em; margin-bottom: 1em;">
+                    灵巧操作是机器人作业的关键，也是类人形机器人的关键组成。手臂协同能够完成对物体的抓取、定位及复杂场景应用。通过视觉完
+                    成对场景的理解与目标定位，控制机械臂与灵巧手实现对物体的精准定位与操作。基于视觉-语音-动作等模型，采用数据训练，实现
+                    端到端的技能学习与稳健泛化，并结合操作精度实现精细调整，达到高精度应用。
                 </p>
-                <ul class="tech-features">
-                    <li>Ultrasound integration for real-time tool tracking</li>
-                    <li>Reduced positive margin rates in clinical studies</li>
-                    <li>Decreased excised specimen weight/size</li>
-                    <li>Enhanced tumor margin visualization</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="tech-card">
-            <div class="tech-content">
-                <h2>NousNav</h2>
-                <p>
-                    A low-cost, open-source neuronavigation solution designed to address neurosurgeon shortages in low
-                    and middle-income countries (LMICs). By combining affordable hardware with free software, NousNav
-                    delivers essential functionalities at under $8,000 USD.
+                <p style="text-indent: 2em; margin-bottom: 1em;">
+                    开展仿人机械臂与灵巧手的运动控制、视觉引导定位、轨迹规划与运动控制、操作技能模仿学习等关键技术，研发臂手协同机器人、
+                    人形机器人等，并结合医疗、工业与家居场景开展应用，探索基于国产底层架构的驱动开发。
                 </p>
-                <ul class="tech-features">
-                    <li>Open-source alternative to commercial systems</li>
-                    <li>Collaboration between Queen’s University and Brigham and Women’s Hospital</li>
-                    <li>Suitable for resource-constrained healthcare settings</li>
-                    <li>Supports core neurosurgical navigation needs</li>
-                </ul>
-            </div>
-            <div class="tech-visual">
-                <img src="/assets//img/team/member1.png" alt="NousNav开源神经导航系统界面" class="featured-image">
-                <div class="collaborators">
-                    <span>Partners: Golby Lab, Kitware</span>
-                    <span>Initiated: 2019</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="tech-card">
-            <div class="tech-visual">
-                <img src="/assets//img/team/member1.png" alt="3D Slicer与ROS2集成工作流" class="featured-image">
-                <div class="tech-tags">
-                    <span>3D Slicer</span>
-                    <span>ROS2</span>
-                    <span>Real-time Visualization</span>
-                </div>
-            </div>
-            <div class="tech-content">
-                <h2>Open-Source Integration</h2>
-                <p>
-                    Advancing image-guided robotic systems through seamless integration of 3D Slicer (medical imaging
-                    platform) and ROS2 (Robot Operating System). The SlicerROS2 module enables direct data transfer and
-                    real-time visualization.
-                </p>
-                <ul class="tech-features">
-                    <li>Eliminates reliance on middleware</li>
-                    <li>Bi-directional data exchange between systems</li>
-                    <li>Supports diverse hardware configurations</li>
-                    <li>Part of ROSMED initiative (<a href="https://rosmed.github.io/"
-                            target="_blank">rosmed.github.io</a>)</li>
-                </ul>
             </div>
         </div>
     </section>
-
-   
 </div>
-
 <script>
     // 简单交互效果：卡片悬停动画
     document.addEventListener('DOMContentLoaded', () => {
@@ -108,7 +46,6 @@ permalink: /Robot-hand-and-dexterous-manipulation
                 card.style.boxShadow = '0 4px 8px rgba(0,0,0,0.05)';
             });
         });
-
         // 图片加载效果
         const images = document.querySelectorAll('img');
         images.forEach(img => {
@@ -120,7 +57,6 @@ permalink: /Robot-hand-and-dexterous-manipulation
         });
     });
 </script>
-
 <style>
     .page-header h1 {
         font-size: 2.5rem;
@@ -204,10 +140,11 @@ permalink: /Robot-hand-and-dexterous-manipulation
 
     .featured-image {
         width: 100%;
-        height: 200px;
+        height: 100%;
         object-fit: cover;
         border-radius: 6px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        /* 调整图片和标题之间的间距 */
     }
 
     .metrics,
@@ -218,6 +155,8 @@ permalink: /Robot-hand-and-dexterous-manipulation
         flex-wrap: wrap;
         color: #666;
         font-size: 0.9rem;
+        margin-top: 0;
+        /* 确保标题上方没有额外的间距 */
     }
 
     .clinical-applications {
@@ -260,6 +199,41 @@ permalink: /Robot-hand-and-dexterous-manipulation
         margin-bottom: 1rem;
     }
 
+
+    h3 {
+        font-size: 18px;
+        color: #002060;
+        margin: 0;
+    }
+
+    .application-list {
+        list-style: none;
+        /* 去掉默认标记 */
+        padding-left: 0;
+        /* 清除默认缩进 */
+    }
+
+    .application-list li {
+        position: relative;
+        /* 为伪元素定位做准备 */
+        padding-left: 15px;
+        /* 给自定义标记留空间 */
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    .application-list li::before {
+        content: "•";
+        /* 自定义圆点标记 */
+        color: #000;
+        /* 标记颜色，可调整 */
+        position: absolute;
+        left: 0;
+        /* 让标记靠左侧对齐 */
+        top: 2px;
+        /* 微调垂直位置，适配文字 */
+    }
+
     @media (min-width: 768px) {
         .technology-showcase {
             grid-template-columns: 1fr;
@@ -270,5 +244,21 @@ permalink: /Robot-hand-and-dexterous-manipulation
         .tech-card {
             grid-template-columns: 1fr !important;
         }
+    }
+
+    .metrics {
+        margin-top: 10px;
+        /* 给标题和图片之间添加一些间距 */
+        display: block;
+        /* 确保元素以块级元素显示 */
+        visibility: visible;
+        /* 确保元素可见 */
+        opacity: 1;
+        /* 确保元素不透明 */
+    }
+
+    .metrics span {
+        color: #000;
+        /* 设置标题文字颜色，可根据需要调整 */
     }
 </style>
