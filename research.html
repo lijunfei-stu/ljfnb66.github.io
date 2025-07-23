@@ -116,7 +116,7 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/IRES_research/research3.png" class="theme-img">
+                        <img src="assets/img/gif/2024robiocablesurgicalrobot.gif" class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -143,7 +143,7 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/IRES_research/research3.png" class="theme-img">
+                        <img src="assets/img/gif/Teleoperation of a Dexterous Hand Using a Wearable Hand.gif" class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -171,7 +171,7 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/IRES_research/research3.png" class="theme-img">
+                        <img src="assets/img/gif/Design and Experiments of a Compact Self-Assembling Mobile Modular Robot with Joint Actuation and Onboard Visual-Based Perception.gif" class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -232,7 +232,7 @@ permalink: /research
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px 15px;
+        gap: 8px 12px;
         /* 保持紧凑间距 */
     }
 
@@ -244,10 +244,10 @@ permalink: /research
     .nav-links li a {
         color: white;
         text-decoration: none;
-        padding: 12px 10px;
+        padding: 8px 10px;
         /* 适当增加内边距配合文字大小 */
         border-radius: 6px;
-        font-size: 1.75rem;
+        font-size: 1.2rem;
         /* 文字调大（原1.05rem → 1.25rem） */
         font-weight: 500;
         /* 增加字重，提升可读性 */
@@ -256,13 +256,55 @@ permalink: /research
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 70px;
+        min-height: 50px;
         /* 适当提高最小高度，避免文字拥挤 */
         line-height: 1.5;
         /* 微调行高，确保多行文字舒适 */
         text-align: center;
         word-break: break-word;
         /* 防止长文字溢出 */
+    }
+
+
+    /* 调整主内容容器，减少左右留白 */
+    .container-fluid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* 扩大内容占比 */
+    .theme-content {
+        width: 70%;
+        /* 从60%提升至70% */
+        padding: 10px 0;
+        /* 减少内边距 */
+    }
+
+    /* 调整研究主题间距，减少空白 */
+    .research-theme {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 20px;
+        /* 增加内边距，避免内容紧贴边缘 */
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        gap: 20px;
+        /* 增加图片与文字的间距 */
+    }
+
+    /* 研究主题图片容器样式 */
+    .theme-img-container {
+        width: 100%;
+        /* 改为100%以适应父容器 */
+        max-width: 450px;
+        /* 限制最大宽度，避免图片过大 */
+        height: auto;
+        /* 高度自适应 */
+        margin: 0 auto;
+        /* 居中显示图片 */
+        padding: 0 20px;
+        /* 增加左右内边距，避免与文字紧贴 */
     }
 
     .nav-links li a:hover {
@@ -273,10 +315,11 @@ permalink: /research
     /* 响应式调整（小屏幕适配） */
     @media (max-width: 768px) {
         .nav-links li a {
-            font-size: 1.1rem;
-            /* 小屏幕文字适当缩小，避免溢出 */
-            padding: 10px 8px;
-            min-height: 60px;
+            font-size: 1.0rem;
+            /* 从1.1rem减少至1.0rem */
+            padding: 8px 6px;
+            min-height: 45px;
+            /* 从60px减少至45px */
         }
     }
 
@@ -312,9 +355,9 @@ permalink: /research
         /* 背景颜色使用主色调 */
         color: white;
         /* 文字颜色为白色 */
-        padding: 30px 0;
+        padding: 15px 0;
         /* 减少上下内边距以降低高度 */
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         /* 底部外边距 */
     }
 
@@ -322,24 +365,12 @@ permalink: /research
     .page-title {
         font-weight: 500;
         /* 字体粗细 */
-        font-size: 3.0rem;
+        font-size: 2.2rem;
         /* 字体大小 */
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         /* 底部外边距 */
     }
 
-    /* 研究主题的样式 */
-    .research-theme {
-        display: flex;
-        align-items: center;
-        margin-bottom: 80px;
-        padding: 30px;
-        /* 增加内边距，避免内容紧贴边缘 */
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        gap: 30px;
-        /* 增加图片与文字的间距 */
-    }
 
     /* 研究主题鼠标悬停样式 */
     .research-theme:hover {
@@ -349,19 +380,6 @@ permalink: /research
         /* 向上移动5像素 */
     }
 
-    /* 研究主题图片容器样式 */
-    .theme-img-container {
-        width: 100%;
-        /* 改为100%以适应父容器 */
-        max-width: 400px;
-        /* 限制最大宽度，避免图片过大 */
-        height: auto;
-        /* 高度自适应 */
-        margin: 0 auto;
-        /* 居中显示图片 */
-        padding: 0 20px;
-        /* 增加左右内边距，避免与文字紧贴 */
-    }
 
     .theme-img {
         width: 100%;
@@ -372,13 +390,6 @@ permalink: /research
         /* 保持图片完整显示，不裁剪 */
     }
 
-    /* 研究主题内容样式 */
-    .theme-content {
-        width: 60%;
-        /* 宽度 */
-        padding: 20px;
-        /* 内边距 */
-    }
 
     /* 研究主题标题样式 */
     .theme-title {
