@@ -57,7 +57,8 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/IRES_research/Ultrasound-navigation-and-multimodal-image-fusion.png" class="theme-img">
+                        <img src="assets/img/IRES_research/Ultrasound-navigation-and-multimodal-image-fusion.png"
+                            class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -184,7 +185,7 @@ permalink: /research
                             模块化机器人由于其具有自组装、自重构等独特的结构生成、变换能力，在非结构化环境和未知作业场景中具有潜在的应用价值，一
                             直以来是智能机器人领域的研究热点和前沿方向。受到蚁群等社会性昆虫的激发，机器人能够通过群体优势克服个体的单一功能弱势
                             ，从而提高系统的任务执行能力。近年来，在深空探测等领域也涌现出一些概念验证，展示出模块化机器人群体的应用前景。项目组
-                            先后研发4款模块化机器人，可自主对接、自主组装与自主重构，可实现地面、空间以及深空等不同场景的应用。                        </p>
+                            先后研发4款模块化机器人，可自主对接、自主组装与自主重构，可实现地面、空间以及深空等不同场景的应用。 </p>
                         <a href="Self-assembling-modular-robot-and-self-reconguring.html" class="btn btn-details">
                             See Details <i class="fas fa-arrow-right"></i>
                         </a>
@@ -331,17 +332,14 @@ permalink: /research
     /* 研究主题的样式 */
     .research-theme {
         display: flex;
-        /* 使用弹性布局 */
         align-items: center;
-        /* 垂直居中对齐 */
         margin-bottom: 80px;
-        /* 底部外边距 */
-        padding: 30px 0;
-        /* 上下内边距 */
+        padding: 30px;
+        /* 增加内边距，避免内容紧贴边缘 */
         border-radius: 10px;
-        /* 边框圆角 */
         transition: all 0.3s ease;
-        /* 所有属性的过渡效果 */
+        gap: 30px;
+        /* 增加图片与文字的间距 */
     }
 
     /* 研究主题鼠标悬停样式 */
@@ -354,15 +352,25 @@ permalink: /research
 
     /* 研究主题图片容器样式 */
     .theme-img-container {
-        width: 40%;
-        /* 宽度 */
+        width: 100%;
+        /* 改为100%以适应父容器 */
         max-width: 400px;
-        /* 最大宽度 */
-        /* height: auto; */
+        /* 限制最大宽度，避免图片过大 */
         height: auto;
         /* 高度自适应 */
-        margin-right: 20px;
-        /* 右边外边距 */
+        margin: 0 auto;
+        /* 居中显示图片 */
+        padding: 0 20px;
+        /* 增加左右内边距，避免与文字紧贴 */
+    }
+
+    .theme-img {
+        width: 100%;
+        /* 图片宽度占满容器 */
+        height: auto;
+        /* 高度等比例缩放 */
+        object-fit: contain;
+        /* 保持图片完整显示，不裁剪 */
     }
 
     /* 研究主题内容样式 */
@@ -562,10 +570,10 @@ permalink: /research
 
         /* 图片容器在小屏幕上宽度为100% */
         .theme-img-container {
-            width: 300px;
-            height: 100%;
+            width: 350px;
+            /* height: 100%; */
             /* 宽度 */
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             /* 底部外边距 */
         }
 
