@@ -143,7 +143,8 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/gif/Teleoperation of a Dexterous Hand Using a Wearable Hand.gif" class="theme-img">
+                        <img src="assets/img/gif/Teleoperation of a Dexterous Hand Using a Wearable Hand.gif"
+                            class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -171,7 +172,8 @@ permalink: /research
             <div class="row align-items-center">
                 <div class="col-lg-6 order-lg-last">
                     <div class="theme-img-container">
-                        <img src="assets/img/gif/Design and Experiments of a Compact Self-Assembling Mobile Modular Robot with Joint Actuation and Onboard Visual-Based Perception.gif" class="theme-img">
+                        <img src="assets/img/gif/Design and Experiments of a Compact Self-Assembling Mobile Modular Robot with Joint Actuation and Onboard Visual-Based Perception.gif"
+                            class="theme-img">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -214,17 +216,19 @@ permalink: /research
 </script>
 
 <style>
-    /* 平滑滚动 */
+    /* 平滑滚动：设置 HTML 页面滚动时具有平滑过渡效果 */
     html {
         scroll-behavior: smooth;
     }
 
     /* 导航菜单样式 */
+    /* 研究导航栏样式：设置导航栏上下外边距 */
     .research-nav {
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
+    /* 导航链接列表样式：去除列表默认样式，设置内边距和外边距为 0，采用弹性布局并居中排列，设置元素间距 */
     .nav-links {
         list-style: none;
         padding: 0;
@@ -236,11 +240,13 @@ permalink: /research
         /* 保持紧凑间距 */
     }
 
+    /* 导航链接列表项样式：设置每个列表项的宽度为 50% 减去 15px，实现两列布局 */
     .nav-links li {
         width: calc(50% - 15px);
         /* 维持两列布局 */
     }
 
+    /* 导航链接样式：设置链接文字颜色、去除下划线，添加内边距和圆角，设置字体大小、字重和背景颜色，添加过渡效果，使其具有交互性 */
     .nav-links li a {
         color: white;
         text-decoration: none;
@@ -265,14 +271,13 @@ permalink: /research
         /* 防止长文字溢出 */
     }
 
-
-    /* 调整主内容容器，减少左右留白 */
+    /* 调整主内容容器，减少左右留白：设置主内容容器的左右内边距 */
     .container-fluid {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    /* 扩大内容占比 */
+    /* 扩大内容占比：设置研究主题内容区域的宽度为 70%，减少上下内边距 */
     .theme-content {
         width: 70%;
         /* 从60%提升至70% */
@@ -280,7 +285,7 @@ permalink: /research
         /* 减少内边距 */
     }
 
-    /* 调整研究主题间距，减少空白 */
+    /* 调整研究主题间距，减少空白：设置研究主题区域的布局为弹性布局，垂直居中对齐，设置底部外边距和内边距，添加圆角和过渡效果，设置图片与文字的间距 */
     .research-theme {
         display: flex;
         align-items: center;
@@ -293,7 +298,7 @@ permalink: /research
         /* 增加图片与文字的间距 */
     }
 
-    /* 研究主题图片容器样式 */
+    /* 研究主题图片容器样式：设置图片容器宽度为 100%，最大宽度为 450px，高度自适应，居中显示图片，增加左右内边距 */
     .theme-img-container {
         width: 100%;
         /* 改为100%以适应父容器 */
@@ -307,12 +312,13 @@ permalink: /research
         /* 增加左右内边距，避免与文字紧贴 */
     }
 
+    /* 导航链接鼠标悬停样式：当鼠标悬停在导航链接上时，改变背景颜色并向上移动 2px */
     .nav-links li a:hover {
         background-color: rgba(255, 255, 255, 0.2);
         transform: translateY(-2px);
     }
 
-    /* 响应式调整（小屏幕适配） */
+    /* 响应式调整（小屏幕适配）：当屏幕宽度小于等于 768px 时，调整导航链接的字体大小、内边距和最小高度 */
     @media (max-width: 768px) {
         .nav-links li a {
             font-size: 1.0rem;
@@ -323,7 +329,7 @@ permalink: /research
         }
     }
 
-    /* 根元素变量定义，用于全局颜色和背景色的设置 */
+    /* 根元素变量定义，用于全局颜色和背景色的设置：定义全局颜色变量，方便后续使用 */
     :root {
         --primary-color: #0A4062;
         /* 主色调 */
@@ -337,7 +343,7 @@ permalink: /research
         /* 轻量背景色 */
     }
 
-    /* 页面整体样式 */
+    /* 页面整体样式：设置页面字体、文字颜色、行高和背景颜色 */
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         /* 字体设置 */
@@ -349,7 +355,7 @@ permalink: /research
         /* 背景颜色 */
     }
 
-    /* 页面头部样式 */
+    /* 页面头部样式：设置页面头部的背景颜色、文字颜色、上下内边距和底部外边距 */
     .page-header {
         background-color: #008080;
         /* 背景颜色使用主色调 */
@@ -361,7 +367,7 @@ permalink: /research
         /* 底部外边距 */
     }
 
-    /* 页面标题样式 */
+    /* 页面标题样式：设置页面标题的字体粗细、大小和底部外边距 */
     .page-title {
         font-weight: 500;
         /* 字体粗细 */
@@ -371,8 +377,7 @@ permalink: /research
         /* 底部外边距 */
     }
 
-
-    /* 研究主题鼠标悬停样式 */
+    /* 研究主题鼠标悬停样式：当鼠标悬停在研究主题区域时，添加阴影效果并向上移动 5px */
     .research-theme:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         /* 阴影效果 */
@@ -380,7 +385,7 @@ permalink: /research
         /* 向上移动5像素 */
     }
 
-
+    /* 研究主题图片样式：设置图片宽度占满容器，高度等比例缩放，保持图片完整显示，不裁剪 */
     .theme-img {
         width: 100%;
         /* 图片宽度占满容器 */
@@ -390,8 +395,7 @@ permalink: /research
         /* 保持图片完整显示，不裁剪 */
     }
 
-
-    /* 研究主题标题样式 */
+    /* 研究主题标题样式：设置研究主题标题的文字颜色、字体粗细、底部外边距、字体大小和颜色过渡效果 */
     .theme-title {
         color: #800000;
         /* 文字颜色 */
@@ -399,13 +403,13 @@ permalink: /research
         /* 字体粗细 */
         margin-bottom: 20px;
         /* 底部外边距 */
-        font-size: 1.8rem;
+        font-size: 2.0rem;
         /* 字体大小 */
         transition: color 0.3s;
         /* 颜色变化的过渡效果 */
     }
 
-    /* 研究主题标题鼠标悬停样式 */
+    /* 研究主题标题鼠标悬停样式：当鼠标悬停在研究主题标题上时，改变文字颜色为强调色，鼠标指针变为手形 */
     .theme-title:hover {
         color: var(--accent-color);
         /* 颜色变为强调色 */
@@ -413,17 +417,17 @@ permalink: /research
         /* 鼠标指针变为手形 */
     }
 
-    /* 研究主题描述样式 */
+    /* 研究主题描述样式：设置研究主题描述的文字颜色、底部外边距和字体大小 */
     .theme-description {
         color: #555;
         /* 文字颜色 */
         margin-bottom: 30px;
         /* 底部外边距 */
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         /* 字体大小 */
     }
 
-    /* 按钮样式 */
+    /* 按钮样式：设置按钮的背景颜色、文字颜色、无边框、内边距、圆角、字体粗细、过渡效果和布局方式 */
     .btn-details {
         background-color: #800000;
         /* 背景颜色为强调色 */
@@ -445,7 +449,7 @@ permalink: /research
         /* 垂直居中对齐 */
     }
 
-    /* 按钮鼠标悬停样式 */
+    /* 按钮鼠标悬停样式：当鼠标悬停在按钮上时，改变背景颜色，向上移动 3px 并添加阴影效果 */
     .btn-details:hover {
         background-color: #008080;
         /* 背景颜色变为鼠标悬停时的强调色 */
@@ -455,7 +459,7 @@ permalink: /research
         /* 阴影效果 */
     }
 
-    /* 按钮内图标的样式 */
+    /* 按钮内图标的样式：设置按钮内图标的左边外边距和过渡效果 */
     .btn-details i {
         margin-left: 8px;
         /* 左边外边距 */
@@ -463,13 +467,13 @@ permalink: /research
         /* 图标移动的过渡效果 */
     }
 
-    /* 按钮内图标鼠标悬停样式 */
+    /* 按钮内图标鼠标悬停样式：当鼠标悬停在按钮上时，按钮内图标向右移动 5px */
     .btn-details:hover i {
         transform: translateX(5px);
         /* 向右移动5像素 */
     }
 
-    /* 分割线样式 */
+    /* 分割线样式：设置分割线的高度、背景为线性渐变、上下外边距和无边框 */
     .section-divider {
         height: 2px;
         /* 高度 */
@@ -481,7 +485,7 @@ permalink: /research
         /* 无边框 */
     }
 
-    /* 页脚样式 */
+    /* 页脚样式：设置页脚的背景颜色、文字颜色、上下内边距和顶部外边距 */
     .footer {
         background-color: var(--primary-color);
         /* 背景颜色为主色调 */
@@ -493,7 +497,7 @@ permalink: /research
         /* 顶部外边距 */
     }
 
-    /* 页脚标题样式 */
+    /* 页脚标题样式：设置页脚标题的字体大小、底部外边距和字体粗细 */
     .footer-title {
         font-size: 1.2rem;
         /* 字体大小 */
@@ -503,7 +507,7 @@ permalink: /research
         /* 字体粗细 */
     }
 
-    /* 页脚链接样式 */
+    /* 页脚链接样式：设置页脚链接的文字颜色、去除下划线、块级显示、底部外边距和颜色过渡效果 */
     .footer-links a {
         color: rgba(255, 255, 255, 0.8);
         /* 文字颜色 */
@@ -517,13 +521,13 @@ permalink: /research
         /* 颜色变化的过渡效果 */
     }
 
-    /* 页脚链接鼠标悬停样式 */
+    /* 页脚链接鼠标悬停样式：当鼠标悬停在页脚链接上时，改变文字颜色为白色 */
     .footer-links a:hover {
         color: white;
         /* 文字颜色变为白色 */
     }
 
-    /* 社交链接样式 */
+    /* 社交链接样式：设置社交链接的显示方式、宽度、高度、背景颜色、圆角、文字居中、行高、右边外边距和过渡效果 */
     .social-links a {
         display: inline-block;
         /* 内联块级元素 */
@@ -545,7 +549,7 @@ permalink: /research
         /* 所有属性的过渡效果 */
     }
 
-    /* 社交链接鼠标悬停样式 */
+    /* 社交链接鼠标悬停样式：当鼠标悬停在社交链接上时，改变背景颜色为强调色，向上移动 3px */
     .social-links a:hover {
         background-color: var(--accent-color);
         /* 背景颜色变为强调色 */
@@ -553,7 +557,7 @@ permalink: /research
         /* 向上移动3像素 */
     }
 
-    /* 版权信息样式 */
+    /* 版权信息样式：设置版权信息的上边框、上边内边距、上边外边距、文字居中、文字颜色和字体大小 */
     .copyright {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         /* 上边框 */
@@ -572,13 +576,13 @@ permalink: /research
     /* 响应式布局：屏幕宽度小于768px时的样式 */
     @media (max-width: 768px) {
 
-        /* 研究主题在小屏幕上变为列布局 */
+        /* 研究主题在小屏幕上变为列布局：当屏幕宽度小于等于 768px 时，研究主题区域采用列布局 */
         .research-theme {
             flex-direction: column;
             /* 弹性布局方向为列 */
         }
 
-        /* 图片容器在小屏幕上宽度为100% */
+        /* 图片容器在小屏幕上宽度为100%：当屏幕宽度小于等于 768px 时，图片容器宽度为 350px，设置底部外边距 */
         .theme-img-container {
             width: 350px;
             /* height: 100%; */
@@ -587,7 +591,7 @@ permalink: /research
             /* 底部外边距 */
         }
 
-        /* 内容在小屏幕上宽度为100% */
+        /* 内容在小屏幕上宽度为100%：当屏幕宽度小于等于 768px 时，研究主题内容区域宽度为 100% */
         .theme-content {
             width: 100%;
             /* 宽度 */
