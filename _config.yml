@@ -31,14 +31,14 @@ google_map: https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3618.727010735
 # 谷歌地图嵌入链接
 
 # Social Link
-facebook_link: /index.html  # Facebook链接
-twitter_link: /index.html # Twitter链接
-linkedin_link: /index.html  # LinkedIn链接
-googleplus_link: /index.html  # Google+链接
-# facebook_link: http://www.facebook.com  # Facebook链接
-# twitter_link: http://www.twitter.com  # Twitter链接
-# linkedin_link: http://www.linkedin.com  # LinkedIn链接
-# googleplus_link: http://plus.google.com  # Google+链接
+# facebook_link: /index.html  # Facebook链接
+# twitter_link: /index.html # Twitter链接
+# linkedin_link: /index.html  # LinkedIn链接
+# googleplus_link: /index.html  # Google+链接
+email_link: lihaiyuan@bupt.edu.cn
+website_link: https://ljfnb66.github.io/index.html
+researchgate_link: https://www.researchgate.net/profile/Haiyuan_Li
+ORCID_link: https://orcid.org/0000-0002-7822-742X
 
 # Build settings
 markdown: kramdown  # 使用kramdown作为Markdown解析器

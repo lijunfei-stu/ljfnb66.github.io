@@ -1,24 +1,33 @@
 <head>
-  <!-- meta data & title -->
+  <!-- 页面元数据与字符编码设置 -->
   <meta charset="utf-8">
+  <!-- 使用Jekyll模板动态生成页面标题：优先使用页面自定义标题，否则使用网站全局标题 -->
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <!-- 响应式布局设置：viewport宽度等于设备屏幕宽度，初始缩放比例1.0 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 网页描述信息，用于搜索引擎优化(SEO) -->
   <meta name="description" content="{{ site.description }}">
+  <!-- 网页作者信息（当前为空） -->
   <meta name="author" content="">
 
-  <!-- Favicon and touch icons -->
-  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <!-- Favicon与触摸图标配置：用于浏览器标签、收藏夹及移动设备 -->
+  <!-- <link rel="shortcut icon" href="../assets/ico/favicon.ico"> -->
+  <link rel="shortcut icon" href="../assets/img/IRES_LOGO/lablogo4.png">
+  <!-- iOS设备添加到主屏幕时的图标，提供多种尺寸适配不同设备 -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 
-  <!-- CSS -->
+  <!-- 外部资源加载：字体与样式表 -->
+  <!-- 加载Google Fonts中的三种字体：Open Sans(含400/300粗细)、PT Sans、Raleway -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../assets/css/animate.min.css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  
+  <!-- 加载前端框架与工具库样式 -->
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">          <!-- Bootstrap核心样式 -->
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">              <!-- Font Awesome图标库 -->
+  <link rel="stylesheet" href="../assets/css/animate.min.css">                   <!-- 动画效果库 -->
+  <link rel="stylesheet" href="../assets/css/style.css">                          <!-- 项目自定义样式 -->
 </head>
