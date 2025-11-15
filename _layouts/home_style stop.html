@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+{% include header.html %}
+{% include script.html %}
+
+<style>
+    /* 隐藏原有内容 */
+    #carousel-section, #services {
+        display: none !important;
+    }
+    
+    /* 禁用菜单点击 */
+    .navbar-nav a, .nav a {
+        pointer-events: none;
+        cursor: default;
+        color: #666 !important; /* 调整颜色为不可点击样式 */
+    }
+    
+    /* 更新提示样式 */
+    .update-notice {
+        text-align: center;
+        padding: 100px 20px;
+        font-family: 'Microsoft YaHei', Arial, sans-serif;
+    }
+    
+    .update-notice h1 {
+        font-size: 36px;
+        color: #002060;
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <!-- 网站更新提示 -->
+    <div class="update-notice">
+        <h1>网站更新中，敬请期待</h1>
+    </div>
+
+    <!-- 原有内容（已通过CSS隐藏） -->
+    <section id="carousel-section" class="section-global-wrapper">...</section>
+    <section id="services" class="services-section section-global-wrapper">...</section>
+</body>
+
+{% include footer.html %}
+
+</html>
