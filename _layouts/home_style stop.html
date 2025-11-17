@@ -6,23 +6,26 @@
 {% include script.html %}
 
 <style>
-    /* 隐藏原有内容 */
-    #carousel-section, #services {
+    /* 隐藏所有原有页面内容 */
+    body > *:not(.update-notice) {
         display: none !important;
     }
     
-    /* 禁用菜单点击 */
-    .navbar-nav a, .nav a {
+    /* 禁用所有链接点击 */
+    a {
         pointer-events: none;
         cursor: default;
-        color: #666 !important; /* 调整颜色为不可点击样式 */
+        color: #666 !important;
     }
     
-    /* 更新提示样式 */
+    /* 更新提示样式（居中显示） */
     .update-notice {
         text-align: center;
         padding: 100px 20px;
         font-family: 'Microsoft YaHei', Arial, sans-serif;
+        /* 确保在页面最上层 */
+        position: relative;
+        z-index: 9999;
     }
     
     .update-notice h1 {
@@ -33,14 +36,13 @@
 </style>
 
 <body>
-    <!-- 网站更新提示 -->
+    <!-- 网站更新提示（所有页面都会显示这个内容） -->
     <div class="update-notice">
         <h1>网站更新中，敬请期待</h1>
+        <p>我们正在优化网站内容和功能，稍后将重新上线</p>
     </div>
 
-    <!-- 原有内容（已通过CSS隐藏） -->
-    <section id="carousel-section" class="section-global-wrapper">...</section>
-    <section id="services" class="services-section section-global-wrapper">...</section>
+    <!-- 原有内容会被CSS隐藏 -->
 </body>
 
 {% include footer.html %}
