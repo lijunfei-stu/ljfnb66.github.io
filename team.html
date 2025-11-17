@@ -646,6 +646,13 @@ permalink: /team
 </div>
 <!--End Main Container -->
 
+<script>
+  // 仅保留首页，其他页面自动跳转到首页
+    if (window.location.pathname !== '/index.html' && window.location.pathname !== '/') {
+        window.location.href = '/index.html';
+    }
+</script>
+
 <style>
   /* Team Section Styles */
   .team-section {
