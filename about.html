@@ -1,5 +1,5 @@
 ---
-layout: home_style_stop
+layout: default_style
 permalink: /about
 ---
 
@@ -251,6 +251,10 @@ permalink: /about
 
 <!-- JS代码 -->
 <script>
+   // 仅保留首页，其他页面自动跳转到首页
+    if (window.location.pathname !== '/index.html' && window.location.pathname !== '/') {
+        window.location.href = '/index.html';
+    }
   // 平滑滚动功能，主要用于左侧的链接导航
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

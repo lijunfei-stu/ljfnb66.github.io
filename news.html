@@ -1,5 +1,5 @@
 ---
-layout: home_style_stop
+layout: default_style
 permalink: /news
 ---
 
@@ -151,6 +151,10 @@ permalink: /news
 
 <!-- JS代码：平滑滚动功能 -->
 <script>
+   // 仅保留首页，其他页面自动跳转到首页
+    if (window.location.pathname !== '/index.html' && window.location.pathname !== '/') {
+        window.location.href = '/index.html';
+    }
   // 为每个锚点链接添加平滑滚动效果
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
